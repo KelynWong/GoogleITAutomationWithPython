@@ -15,7 +15,7 @@ def upload_images(image_dir, url):
                 else:
                     print(f"Failed to upload {filename}, Status code: {response.status_code}")
 
-if name == "main":
+if __name__ == "__main__":
     image_directory = os.path.expanduser("~/supplier-data/images")
     upload_url = "http://localhost/upload/"
 
